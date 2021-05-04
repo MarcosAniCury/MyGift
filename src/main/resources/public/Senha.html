@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = pt-br>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name = "author" content = "Letícia Americano Lucas, Ludmila Bruna Santos Nascimento, Marcos Any Cury Vinagre Silva, Victor Leite de Andrade">
+        <title>My Gift</title>
+        <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity = "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin = "anonymous">
+        <link rel = "stylesheet" href = "Css/Senha.css">
+        <link rel = "stylesheet" href = "Css/Footer.css">
+        <link rel = "stylesheet" href = "Css/Header.css">
+        <link rel = "stylesheet" href = "Css/SiteComandosQEuNCompreendoB.css">
+    </head>
+    <body>
+        <header class = "Header fixed-top" id = "Header">
+            <div style = "background-color: #88e8dc;"><br></div>
+        </header>
+        <main class = "Main text-center container-fluid " id = "Main">
+            <a href = "Index.html"><img src = "Imagem/Logo_Inscreva.png" class = "text-center mt-5 mb-3 rounded"></a>
+            <form class = "form-signin" id = "form-login">
+                <div class = "container-margin-login">
+                    <h3 class = "mb-3 font-weight-light SenhaLetra"><b>Esqueceu sua senha?</b></h3>
+                    <!--Endereço de Email-->
+                    <div class = "mb-3"> 
+                        <label for = "inputEmail" class = "sr-only">Endereço de Email</label>
+                        <input type = "email" name="email" id = "inputemail" class = "form-control Entrar_Letra" placeholder = "Endereço de Email" required >
+                    </div>
+                    <!--Senha-->
+                    <label for = "inputsenha" class = "sr-only mb-5">Senha</label>
+                    <input type = "password" name="senha" id = "inputsenha" class = " form-control Entrar_Letra" placeholder = "Senha" required>
+                    <label for = "inputcorreta" class = "sr-only mb-5">Confirma senha</label>
+                    <input type = "password" name="senhaconfirma" id = "inputcorreta" class = " form-control Entrar_Letra" placeholder = "Confirma senha" required>
+                    <div class="result"></div>
+                    <h5 class = "mb-3 mt-5  font-weight-light SenhaLetra"><b>Qual foi sua primeira escola?</b></h5>
+                    <label for = "inputchave" class = "sr-only mb-5">Resposta</label>
+                    <input type = "text" name="resposta" id = "inputchave" class = " form-control Entrar_Letra" placeholder = "Resposta" required>
+                    <div class="result"></div>
+                    <button class = "btn Borda btn-block Email_Letra btn-login mt-5" id="btn">Enviar</button>
+                </div>
+            </form>
+        </main>
+        <!--Footer-->
+        <footer class = "Footer fixed-bottom" id = "Footer">
+            <div style = "background-color: #88e8dc;"><br></div>
+        </fotter>
+        <script src = "https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src = "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src = "Javascript/EsqueciSenha.js"></script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+.Departamento_Letra
+{
+    font-family:'Calibri Light';
+    font-size: 40px;
+}
+.Questionario
+{
+    font-family:'Calibri Light';
+    color:black;
+}
+@media (max-width:768px)
+{
+    .Departamento_Letra
+    {
+        font-size: 20px;
+    }
+}
+.espaço
+{
+    margin-top: 70px;
+    padding-bottom: 40px;
+}
+.LogoNome
+{
+    width: 30%;
+}
+.LogoImagem
+{
+    display:none;
+}
+@media (max-width:768px)
+{
+    .LogoNome
+    {
+        display:none;
+    }
+    .LogoImagem
+    {
+        display:flex;
+        justify-content: center;
+    }
+}

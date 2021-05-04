@@ -1,0 +1,33 @@
+.espaço
+{
+    margin-top: 70px;
+    padding-bottom: 40px;
+}
+.AdminLetra
+{
+    color: black;
+    font-family:'Calibri Light';
+}
+.btn-login 
+{
+    background-color: #88e8dc;
+    color: #fff;
+    border: none;
+}
+.container-margin-login 
+{
+    max-width: 600px;
+}
+.formulario
+{
+    margin-left: 30%; 
+    margin-right: 30%;
+}
+.espacoso
+{
+    margin-top: 200px;
+}
+.html, .body 
+{
+    overflow: hidden;
+}

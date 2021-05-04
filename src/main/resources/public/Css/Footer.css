@@ -1,0 +1,15 @@
+.Copyright
+{
+    font-size: 12px;
+    font-family: Arial;
+}
+.Modal
+{
+    display: none;
+}
+.Footer_Letra
+{
+    text-align: center;
+    font-family:'Calibri Light';
+    color: white;
+}

@@ -1,0 +1,44 @@
+.SobreTitulo
+{
+    text-align: center;
+    font-family:'Calibri Light';
+    color: black;
+}
+.SobreP
+{
+    font-family:'Calibri Light';
+    color: black;
+    font-size: 18px;
+}
+.circle 
+{
+    align-items: center;
+    background-color:white;
+    border-radius: 80%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+.circle img 
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.CriadoresTitulo
+{
+    font-family:'Calibri Light';
+    color: black;
+}
+.Email
+{
+    text-align: center;
+    font-family:'Calibri Light';
+    color: white;
+}
+.espaço
+{
+    margin-top: 70px;
+    padding-bottom: 40px;
+}

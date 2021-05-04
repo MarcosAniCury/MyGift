@@ -1,0 +1,19 @@
+.SenhaLetra
+{
+    color: black;
+    font-family:'Calibri Light';
+}
+.container-margin-login 
+{
+    max-width: 450px;
+}
+.btn-login 
+{
+    background-color: #88e8dc;
+    color: #fff;
+    border: none;
+}
+#inputemail, #inputsenha, #inputcorreta, #inputchave
+{
+    border: 1px solid #888;
+}

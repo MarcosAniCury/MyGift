@@ -1,0 +1,38 @@
+.Titulo
+{
+    font-family:'Calibri Light';
+}
+.Produto
+{
+    font-family:'Calibri Light';
+    font-size: 40px;
+}
+.Descrição
+{
+    font-family:'Calibri Light';
+    font-size: 15px;
+}
+.Imagem_Produto
+{
+    width: 30%;
+}
+@media (max-width:768px)
+{
+    .Imagem_Produto
+    {
+        width: 50%;
+    }
+}
+.espaço
+{
+    margin-top: 150px;
+    padding-bottom: 40px;
+}
+.container-margin-login 
+{
+    max-width: 500px;
+}
+html, body 
+{
+    overflow: hidden;
+}

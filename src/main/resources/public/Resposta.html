@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang = pt-br>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name = "author" content = "Letícia Americano Lucas, Ludmila Bruna Santos Nascimento, Marcus Any Cury Vinagre Silva, Victor Leite de Andrade">
+        <title>My Gift</title>
+        <link rel="stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity = "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin = "anonymous">
+        <link rel = "stylesheet" href = "Css/Resposta.css">
+        <link rel = "stylesheet" href = "Css/SiteComandosQEuNCompreendoB.css">
+        <link rel = "stylesheet" href = "Css/Footer.css">
+        <link rel = "stylesheet" href = "Css/Header.css">    
+    </head>
+    <body>
+        <!--Header-->
+        <header class = "Header fixed-top" id = "Header">
+            <!--Menu: Menu, Produto, Sobre, Questionario, Perfil-->
+            <nav class = "navbar navbar-expand-xl" style = "background-color: #88e8dc;">
+                <h4 class = "text-white Nome">My Gift</h4>
+                <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarSupportedContent" aria-controls = "navbarSupportedContent" aria-expanded = "false" aria-label = "Toggle navigation" style = "outline: none;">
+                    <svg width = "1em" height = "1em" viewBox = "0 0 16 16" class = "bi bi-justify" fill = "white" xmlns = "http://www.w3.org/2000/svg">
+                        <path fill-rule = "evenodd" d = "M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+                <div class = "collapse navbar-collapse" id = "navbarSupportedContent">
+                    <div class = "Menu_Centro">
+                        <ul class = "navbar-nav Espaçamento">
+                            <!--Menu-->
+                            <li class="nav-item text-center">
+                                <a class = "nav-link Header_Menu nav-item-custom text-white" id = "menu" href = "Site.html">Menu</a>
+                            </li>
+                            <!--Questionario-->
+                            <li class="nav-item text-center dropdown">
+                                <div class="dropdown nav-item">
+                                    <a class = " nav-link Header_Menu nav-item-custom text-white" id = "sac" href = "#" role = "button" id = "dropdownMenuLink" data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false">Questionário</a>
+                                    <div class = "dropdown-menu" aria-labelledby = "dropdownMenuLink">
+                                        <a class = "dropdown-item Menu_DropDown text-center" href = "Formulario.html">Presenteado</a>
+                                        <a class = "dropdown-item Menu_DropDown text-center" href = "Formulario2.html">Auto Presenteado</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--Sobre-->
+                            <li class="nav-item text-center">
+                                <a class = "nav-link Header_Menu nav-item-custom text-white" id = "sobre" href = "Sobre.html">Sobre</a>
+                            </li>
+                            <!--SAC-->
+                            <li class="nav-item text-center">
+                                <a class = "nav-link Header_Menu nav-item-custom text-white" id = "sac" href = "SAC.html">SAC</a>
+                            </li>
+                            <!--Sair-->
+                            <li class = "nav-item text-center">
+                                <a class = "nav-link Header_Menu nav-item-custom text-white" id = "sair" href = "Index.html">Sair</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class = "espaço">
+            <h4 class = "text-center Titulo mb-5">O produto que melhor se encaixa nos dados informados é :</h4>
+            <div class = "row d-flex justify-content-center" id="item">
+                <div class = "text-center container-margin-login">
+                    <li class = "media text-center">
+                        <img src="Imagem/Jabulani.png"  class = "Imagem_Produto container-fluid" alt = "Descrição">
+                        <div class="media-body">
+                            <h2 class = "Produto mb-3">Bola Jabulani Copa 2010</h2>
+                            <p class = "lead Descrição ml-mt-5">Hobbies: Esporte.<br>Faixa Etária: Livre.<br>Preço: 39,99.</p>
+                            <h4 class = "MTexto ml-3">&raquo;</h4>
+                        </div>
+                    </li>
+                </div>
+            </div>
+            <hr class = "my-3 container-fluid">
+            <!--Copyright-->
+            <p class = "Copyright text-center">&copy; 2020 Magenta Team. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </main>
+        <!--Footer-->
+        <footer class = "Footer fixed-bottom" id = Footer>
+            <div style = "background-color: #88e8dc;"><br></div>
+            <div class="w-100"></div>
+        </footer>
+        <script src = "https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src = "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="./Javascript/Resposta.js"></script>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+.Letra
+{
+    font-family: 'Calibri Light';
+}
+@media (max-width:768px)
+{
+    .Chatbot
+    {
+        height: 600px;
+    }
+}

@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>teste</title>
+  </head>
+  <body>
+    <div id="chat" class="box"></div>
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+    </script>
+    <script>
+        (function () {
+            window.onload = function () {
+                new BlipChat()
+                .withAppKey('c2FjMzM6MGNmYjk4NDAtNmQzMy00ZThkLWFjMmQtYjU4OWM0OWJhODlm')
+                .withButton({"color":"#88e8dc","icon":""})
+                .withCustomCommonUrl('https://chat.blip.ai/')
+              .withTarget('chat')
+                .build();
+            }
+        })();
+    </script>
+  </body>
+</html>

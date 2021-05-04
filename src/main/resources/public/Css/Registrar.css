@@ -1,0 +1,24 @@
+.Registrar_Letra
+{
+    color: black;
+    font-family:'Calibri Light';
+}
+.container-margin-login 
+{
+    max-width: 450px;
+}
+.btn-login 
+{
+    background-color: #88e8dc;
+    color: #fff;
+    border: none;
+}
+#inputemail, #inputsenha, #inputdate, #inputname, #inputsexo,#inputchave
+{
+    border: 1px solid #888;
+}
+.espaço
+{
+    margin-top: 30px;
+    padding-bottom: 40px;
+}

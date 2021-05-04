@@ -1,0 +1,36 @@
+.Produto
+{
+    font-family:'Calibri Light';
+    font-size: 40px;
+}
+.Descrição
+{
+    font-family:'Calibri Light';
+    font-size: 15px;
+    text-align: justify;
+}
+.Imagem_Produto
+{
+    width: 30%;
+}
+@media (max-width:768px)
+{
+    .Imagem_Produto
+    {
+        width: 50%;
+    }
+    .Produto
+    {
+        font-size: 25px;
+    }
+    .Descrição
+    {
+        font-size: 20px;
+    }
+}
+.btn-login 
+{
+    background-color: #88e8dc;
+    color: #fff;
+    border: none;
+}

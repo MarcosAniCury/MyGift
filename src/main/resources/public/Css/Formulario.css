@@ -1,0 +1,50 @@
+.Formulario_Imagem
+{
+    width: 30%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.btn-login 
+{
+    background-color: #88e8dc;
+    color: #fff;
+    border: none;
+}
+.Letra_Botao
+{
+    color: white;
+    font-size:20px;
+    font-family:'Calibri Light';
+    margin-right: 20px;
+}
+.Letra_Formulario
+{
+    color: black;
+    font-size:20px;
+    font-family:'Calibri Light';
+    margin-right: 20px;
+}
+.AutoFormulario_Imagem
+{
+    width: 10%;
+}
+@media (max-width:768px)
+{
+    .Formulario_Imagem
+    {
+        width: 70%;
+    }
+    .AutoFormulario_Imagem
+    {
+        width: 50%;
+    }
+}
+.espaço
+{
+    margin-top: 70px;
+    padding-bottom: 40px;
+}
+.Logo_Nome
+{
+    width: 65%;
+}

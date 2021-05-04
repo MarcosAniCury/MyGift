@@ -1,0 +1,53 @@
+.Logo_Nome
+{
+    width: 65%;
+}
+.Logo_Imagem
+{
+    display:none;
+}
+.Nome
+{
+    display:none;
+}
+.Header_Menu
+{
+    color: white;
+    font-size:20px;
+    font-family:'Calibri Light';
+}
+.Menu_DropDown
+{
+    color: black;
+    font-size:16px;
+    font-family:'Calibri Light';
+    margin-right: 20px;
+}
+@media (max-width:768px)
+{
+    .Menu_Centro
+    {
+        margin-left: 0px;
+        justify-content: center;
+    }   
+    .Logo_Nome
+    {
+        display:none;
+    }
+    .Logo_Imagem
+    {
+        display:flex;
+        justify-content: center;
+    }
+    .Nome
+    {
+        display: block;
+        font-family:'Calibri Light';
+    }
+}
+.Espaçamento
+{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
