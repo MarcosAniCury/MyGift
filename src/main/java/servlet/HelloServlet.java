@@ -11,9 +11,9 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet(
         name = "MyServlet",
-        urlPatterns = {"/hello"}
+        urlPatterns = {"src/main/resources/Index"}
     )
-    
+
 public class HelloServlet extends HttpServlet {
 
     @Override
