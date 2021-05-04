@@ -1,42 +1,19 @@
 package launch;
 
-import java.io.File;
+import static javax.measure.unit.SI.KILOGRAM;
+import javax.measure.quantity.Mass;
+import org.jscience.physics.model.RelativisticModel;
+import org.jscience.physics.amount.Amount;
 
-import org.apache.catalina.WebResourceRoot;
-import org.apache.catalina.core.StandardContext;
-import org.apache.catalina.startup.Tomcat;
-import org.apache.catalina.webresources.DirResourceSet;
-import org.apache.catalina.webresources.StandardRoot;
+public class Main 
+{
 
-public class Main {
-
-    public static void main(String[] args) throws Exception 
+    @RequestMapping("src/resources/Index")
+    String hello(Map<String, Object> model) 
     {
-
-        String webappDirLocation = "src/main/resources/";
-        Tomcat tomcat = new Tomcat();
-
-        //The port that we should run on can be set into an environment variable
-        //Look for that variable and default to 8080 if it isn't there.
-        String webPort = System.getenv("PORT");
-        if(webPort == null || webPort.isEmpty()) {
-            webPort = "8080";
-        }
-
-        tomcat.setPort(Integer.valueOf(webPort));
-
-        StandardContext ctx = (StandardContext) tomcat.addWebapp("/", new File(webappDirLocation).getAbsolutePath());
-        System.out.println("configuring app with basedir: " + new File("./" + webappDirLocation).getAbsolutePath());
-
-        // Declare an alternative location for your "WEB-INF/classes" dir
-        // Servlet 3.0 annotation will work
-        File additionWebInfClasses = new File("target/classes/itens");
-        WebResourceRoot resources = new StandardRoot(ctx);
-        resources.addPreResources(new DirResourceSet(resources, "/WEB-INF/classes",
-                additionWebInfClasses.getAbsolutePath(), "/"));
-        ctx.setResources(resources);
-
-        tomcat.start();
-        tomcat.getServer().await();
+        RelativisticModel.select();
+        Amount<Mass> m = Amount.valueOf("12 GeV").to(KILOGRAM);
+        model.put("science", "E=mc^2: 12 GeV = " + m.toString());
+        return "src/resources/Index";
     }
 }
