@@ -25,4 +25,16 @@
 			<version>20190722</version>
 		</dependency>
 	</dependencies>
+	<build>
+		<finalName>MyGift</finalName>
+		<plugins>
+			<plugin>    
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>

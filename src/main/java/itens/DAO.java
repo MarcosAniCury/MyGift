@@ -33,9 +33,9 @@ public class DAO
 			status = (conexao == null);
 			System.out.println("Conexão efetuada com o postgres!");
 		} catch (ClassNotFoundException e) { 
-			System.err.println("Conexão NÃO efetuada com o postgres -- Driver não encontrado -- " + e.getMessage());
+			System.err.println("Conexão nao efetuada com o postgres -- Driver nao encontrado -- " + e.getMessage());
 		} catch (SQLException e) {
-			System.err.println("Conexão NÃO efetuada com o postgres -- " + e.getMessage());
+			System.err.println("Conexão nao efetuada com o postgres -- " + e.getMessage());
 		}
 
 		return status;
@@ -411,7 +411,7 @@ public class DAO
 		return retorno;
 	}
 	
-	//-----Algoritmo de Recomenda��o----
+	//-----Algoritmo de Recomenda��o----
 	
 	public int idMelhorProduto(String[] hobbies,int idade,char valor)
 	{
