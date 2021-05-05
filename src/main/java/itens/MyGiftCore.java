@@ -62,7 +62,7 @@ public class MyGiftCore {
 		return melhor;
 	}
 	
-	public static String[] StringVariavel(String[] vet)
+	public static String[] VetorVariavel(String[] vet)
 	{
 		String[] temp = new String[1];
 		if (vet[0].equals("null"))
@@ -86,7 +86,7 @@ public class MyGiftCore {
 		{
 			if(hob[i])
 			{
-				hobbies = StringVariavel(hobbies);
+				hobbies = VetorVariavel(hobbies);
 				hobbies[conthobbies++] = todosHobbies[i];
 			}
 		}

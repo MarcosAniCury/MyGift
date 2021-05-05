@@ -165,7 +165,7 @@ public class DAO
 			int i = 0;
 			while(rs2.next())
 			{
-				hobbies = MyGiftCore.StringVariavel(hobbies);
+				hobbies = MyGiftCore.VetorVariavel(hobbies);
 				Statement st3 = conexao.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
 				ResultSet rs3 = st3.executeQuery("SELECT nome FROM hobbies WHERE id = \'" +rs2.getInt("hobbie")+"\'");
 				rs3.next();
@@ -203,7 +203,7 @@ public class DAO
 			int i = 0;
 			while(rs2.next())
 			{
-				hobbies = MyGiftCore.StringVariavel(hobbies);
+				hobbies = MyGiftCore.VetorVariavel(hobbies);
 				Statement st3 = conexao.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
 				ResultSet rs3 = st3.executeQuery("SELECT nome FROM hobbies WHERE id = \'" +rs2.getInt("hobbie")+"\'");
 				rs3.next();
@@ -240,7 +240,7 @@ public class DAO
 	    			int j = 0;
 	    			while(rs2.next())
 	    			{
-	    				hobbies = MyGiftCore.StringVariavel(hobbies);
+	    				hobbies = MyGiftCore.VetorVariavel(hobbies);
 	    				Statement st3 = conexao.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
 	    				ResultSet rs3 = st3.executeQuery("SELECT nome FROM hobbies WHERE id = \'" +rs2.getInt("hobbie")+"\'");
 	    				rs3.next();
