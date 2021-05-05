@@ -58,7 +58,7 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-dependency-plugin</artifactId>
-					<version>3.0.1</version>
+					<version>3.8.0</version>
 					<configuration>
 						<descriptorRefs>
 							<!-- This tells Maven to include all dependencies -->
