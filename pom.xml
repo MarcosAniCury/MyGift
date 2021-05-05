@@ -5,6 +5,7 @@
 	<artifactId>MyGift</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
+
 		<dependency>
 			<groupId>com.sparkjava</groupId>
 			<artifactId>spark-core</artifactId>
@@ -67,17 +68,31 @@
 		
 	</dependencies>
 
-	<build>
-		<finalName>MyGift</finalName>
-		<plugins>
-			<plugin>    
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+	 <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>appassembler-maven-plugin</artifactId>
+                <version>1.1.1</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>assemble</goal>
+                        </goals>
+                        <configuration>
+                            <assembleDirectory>target</assembleDirectory>
+                            <programs>
+                                <program>
+                                    <mainClass>HelloWorld</mainClass>
+                                    <name>webapp</name>
+                                </program>
+                            </programs>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
