@@ -28,42 +28,6 @@
 			<artifactId>json</artifactId>
 			<version>20190722</version>
 		</dependency>
-
-		<dependency>
-			<groupId>org.apache.tomcat.embed</groupId>
-			<artifactId>tomcat-embed-core</artifactId>
-			<version>9.0.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.tomcat.embed</groupId>
-			<artifactId>tomcat-embed-jasper</artifactId>
-			<version>9.0.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.tomcat</groupId>
-			<artifactId>tomcat-jasper</artifactId>
-			<version>9.0.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.tomcat</groupId>
-			<artifactId>tomcat-jasper-el</artifactId>
-			<version>9.0.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.tomcat</groupId>
-			<artifactId>tomcat-jsp-api</artifactId>
-			<version>9.0.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.jscience</groupId>
-			<artifactId>jscience</artifactId>
-			<version>4.3.1</version>
-		</dependency>
 		
 	</dependencies>
 
@@ -77,6 +41,13 @@
 		</resources>
 		<pluginManagement>
 			<plugins>
+				<plugin>    
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+					</configuration>
+				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
@@ -148,5 +119,5 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-	
+
 </project>
