@@ -7,8 +7,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Random;
 
-import com.sun.tools.javac.launcher.Main;
-
 import spark.*;
 import static spark.Spark.*;
 
@@ -142,7 +140,7 @@ public class MyGiftCore {
 		try
 		{
 			String htmlFile = "Index.html";
-			URL url = Main.class.getResource(htmlFile);
+			URL url = MyGiftCore.class.getResource(htmlFile);
 			Path path = Paths.get(url.toURI());
 			resp = new String(Files.readAllBytes(path), Charset.defaultCharset());
 		}
