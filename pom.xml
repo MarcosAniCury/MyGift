@@ -50,65 +50,17 @@
 					</configuration>
 				</plugin>
 				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-dependency-plugin</artifactId>
-					<version>3.1.2</version>
-					<configuration>
-						<descriptorRefs>
-							<!-- This tells Maven to include all dependencies -->
-							<descriptorRef>jar-with-dependencies</descriptorRef>
-						</descriptorRefs>
-						<archive>
-							<manifest>
-								<mainClass>Main</mainClass>
-							</manifest>
-						</archive>
-					</configuration>
+					<version>3.0.1</version>
 					<executions>
 						<execution>
+							<id>copy-dependencies</id>
 							<phase>package</phase>
-							<goals>
-								<goal>single</goal>
-							</goals>
+							<goals><goal>copy-dependencies</goal></goals>
 						</execution>
 					</executions>
-				</plugin>
-				<plugin>
-					<artifactId>maven-assembly-plugin</artifactId>
-					<executions>
-						<execution>
-							<phase>package</phase>
-							<goals>
-								<goal>single</goal>
-							</goals>
-						</execution>
-					</executions>
-					<configuration>
-						<descriptorRefs>
-							<!-- This tells Maven to include all dependencies -->
-							<descriptorRef>jar-with-dependencies</descriptorRef>
-						</descriptorRefs>
-						<archive>
-							<manifest>
-								<mainClass>Main</mainClass>
-							</manifest>
-						</archive>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>com.heroku.sdk</groupId>
-					<artifactId>heroku-maven-plugin</artifactId>
-					<version>3.0.3</version>
-					<configuration>
-						<jdkVersion>11.0.8</jdkVersion>
-						<!-- Use your own application name -->
-						<appName>conexussystem</appName>
-						<processTypes>
-							<!-- Tell Heroku how to launch your application -->
-							<!-- You might have to remove the ./ in front -->
-							<web>java $JAVA_OPTS -cp target/classes:target/dependency/* itens.MyGiftCore</web>
-						</processTypes>
-					</configuration>
-				</plugin>
+            	</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
