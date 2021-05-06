@@ -1,7 +1,12 @@
 package itens;
+
+import java.nio.*;
+import java.net.*;
 import java.util.Random;
-import itens.MyIO;
+import spark.*;
 import static spark.Spark.*;
+
+import itens.MyIO;
 
 /*
  * 
@@ -21,6 +26,10 @@ public class MyGiftCore {
 		dao.conectar();
 		port(getHerokuAssignedPort());
 		staticFiles.location("/public");
+		
+		//--Render Index--
+		
+		get("/", (req,res) -> renderIndex(req,res));
 		
 		//--Usuario--
 		
@@ -119,4 +128,23 @@ public class MyGiftCore {
             return Integer.parseInt(processBuilder.environment().get("PORT"));
         return 4567; //return default port if heroku-port isn't set (i.e. on localhost)
     }
+	
+	private static String renderIndex(Request req, Response res)
+	{
+		res.type("text/html");
+		String resp;
+		try
+		{
+			String htmlFile = "Index.html";
+			URL url = getClass().getResource(htmlFile);
+			Path path = Paths.get(url.toURI());
+			resp = new String(Files.readAllBytes(path), Charset.defaultCharset());
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+			resp = "<html><head><title>Error</title></head><body>Erro...</body></html>";
+		}
+		return resp;
+	}
 }
