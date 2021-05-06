@@ -1,1 +1,1 @@
-java $JAVA_OPTS -cp target/classes:target/dependency/* app.Aplicacao
+java $JAVA_OPTS -cp target/classes:target/dependency/* itens.MyGiftCore
