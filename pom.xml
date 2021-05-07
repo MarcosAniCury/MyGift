@@ -57,7 +57,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>Main</mainClass>
+                            <mainClass>MyGiftCore</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
