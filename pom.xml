@@ -61,7 +61,7 @@
 						</descriptorRefs>
 						<archive>
 							<manifest>
-								<mainClass>Main</mainClass>
+								<mainClass>MyGiftCore</mainClass>
 							</manifest>
 						</archive>
 					</configuration>
@@ -91,7 +91,7 @@
 						</descriptorRefs>
 						<archive>
 							<manifest>
-								<mainClass>Main</mainClass>
+								<mainClass>MyGiftCore</mainClass>
 							</manifest>
 						</archive>
 					</configuration>
@@ -103,7 +103,7 @@
 					<configuration>
 						<jdkVersion>11.0.8</jdkVersion>
 						<!-- Use your own application name -->
-						<appName>conexussystem</appName>
+						<appName>mygift98</appName>
 						<processTypes>
 							<!-- Tell Heroku how to launch your application -->
 							<!-- You might have to remove the ./ in front -->
