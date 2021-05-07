@@ -1,1 +1,1 @@
-java $JAVA_OPTS -cp target/classes:target/dependency/* itens.MyGiftCore
+web: java -jar target/MyGift-0.0.1-SNAPSHOT.jar
