@@ -32,6 +32,13 @@
 	</dependencies>
 
 	<build>
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<testSourceDirectory>src/test/java</testSourceDirectory>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+		</resources>
 		<plugins>
 	        <plugin>
 	            <groupId>org.apache.maven.plugins</groupId>
@@ -75,7 +82,7 @@
 			        <processTypes>
 			            <!-- Tell Heroku how to launch your application -->
 			            <!-- You might have to remove the ./ in front   -->
-			            <web>java $JAVA_OPTS -cp target/classes:target/* MyGift-0.0.1-SNAPSHOT.jar</web>
+			            <web>java $JAVA_OPTS -cp target/classes:target/MyGift-0.0.1-SNAPSHOT.jar</web>
 			        </processTypes>
 			    </configuration>
 			</plugin>
