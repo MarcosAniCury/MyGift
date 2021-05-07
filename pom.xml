@@ -57,7 +57,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>MyGiftCore</mainClass>
+                            <mainClass>itens.MyGiftCore</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
