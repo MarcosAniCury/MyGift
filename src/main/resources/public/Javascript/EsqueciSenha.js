@@ -22,7 +22,7 @@ $('form').submit(e => {
 
     let data = $('form').serialize()
 
-    $.post('http://localhost:5573/esquecisenha', data, res => {
+    $.post('/esquecisenha', data, res => {
         let resp = JSON.parse(res)
         if(resp.status)
             window.location.href = './index.html'

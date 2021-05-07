@@ -3,7 +3,7 @@ $('form').on('submit', e =>
     e.preventDefault()
     let data = { email: $('#inputemail').val(), senha: $('#inputsenha').val() }
 
-    $.post ('http://localhost:5573/login', data, res => {
+    $.post ('/login', data, res => {
             let data = JSON.parse(res)
             if (data.LoginEfetuado) 
             {

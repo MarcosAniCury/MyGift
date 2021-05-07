@@ -3,7 +3,7 @@ $('form').submit(e => {
     
     let data = $('form').serialize()
 
-    $.post('http://localhost:5573/cadastro', data, res => {
+    $.post('/cadastro', data, res => {
         let response = JSON.parse(res)
         if (response.CadastroEfetuado) {
             window.location.href = './index.html?auth=true'

@@ -15,7 +15,7 @@ function showhobbies(hobbies) {
     })
 }
 
-$.get(`http://localhost:5573/getproduto/${id}`, res => {
+$.get(`/getproduto/${id}`, res => {
     let product = JSON.parse(res)
     $('#id').val(product.id)
     $('#nome').val(product.nome)
@@ -30,7 +30,7 @@ $('form').submit(e =>{
 
     let data = $('form').serialize()
 
-    $.post('http://localhost:5573/alterarproduto', data, res => {
+    $.post('/alterarproduto', data, res => {
         let resp = JSON.parse(res)
         window.location.href = `./Produtos.html`
     })

@@ -19,17 +19,12 @@ public class DAO
 	//conectar com o banco de dados
 	public boolean conectar() {
 		String driverName = "org.postgresql.Driver";                    
-		String serverName = "localhost";
-		String mydatabase = "MyGift";
-		int porta = 5432;
-		String url = "jdbc:postgresql://" + serverName + ":" + porta +"/" + mydatabase;
-		String username = "postgres";
-		String password = "admin";
+		String url = getPostgresURL();
 		boolean status = false;
 
 		try {
 			Class.forName(driverName);
-			conexao = DriverManager.getConnection(url, username, password);
+			conexao = DriverManager.getConnection(url);
 			status = (conexao == null);
 			System.out.println("Conexao com o postgress efetuada");
 		} catch (ClassNotFoundException e) { 
@@ -499,4 +494,12 @@ public class DAO
 		}
 		return idMelhorProduto;
 	}
+
+	private static String getPostgresURL() 
+	{
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        if (processBuilder.environment().get("DATABASE") != null) 
+            return processBuilder.environment().get("DATABASE");
+        return "jdbc:postgresql://localhost:5432/MyGift?user=postgres&password=admin"; //return localhost postgres
+    }
 }

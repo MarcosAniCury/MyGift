@@ -38,7 +38,7 @@ function render (products) {
 }
 
 function GetAllProduct() {
-    $.get(`http://localhost:5573/listarprodutos`, res => {
+    $.get(`/listarprodutos`, res => {
         let products = JSON.parse(res)
         render(products)
     })
@@ -50,7 +50,7 @@ function UpdateProduct(id) {
 
 function DeleteProduct(id) {
     if (confirm('Deseja realmente deletar este produto?')) {
-        $.post('http://localhost:5573/deletarproduto', {id: id}, res => {
+        $.post('/deletarproduto', {id: id}, res => {
             let data = JSON.parse(res)
             if (data.status) {
                 alert('Produto deletado com sucesso!')

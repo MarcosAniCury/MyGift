@@ -32,7 +32,7 @@ function renderProduct(product) {
 
 
 function getProduct(id_product) {
-    $.get(`http://localhost:5573/presenteado/${id_product}`, res => {
+    $.get(`/presenteado/${id_product}`, res => {
         let response = JSON.parse(res)
         renderProduct(response)
     })
