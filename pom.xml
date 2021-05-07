@@ -66,7 +66,7 @@
 	                </descriptorRefs>
 	                <archive>
 	                    <manifest>
-	                        <mainClass>Main</mainClass>
+	                        <mainClass>itens.MyGiftCore</mainClass>
 	                    </manifest>
 	                </archive>
 	            </configuration>
@@ -82,7 +82,7 @@
 			        <processTypes>
 			            <!-- Tell Heroku how to launch your application -->
 			            <!-- You might have to remove the ./ in front   -->
-			            <web>java -jar ./target/MyGiftCore.jar</web>
+			            <web>java -jar ./target/MyGift-0.0.1-SNAPSHOT.jar</web>
 			        </processTypes>
 			    </configuration>
 			</plugin>
