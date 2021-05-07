@@ -32,13 +32,6 @@
 	</dependencies>
 
 	<build>
-		<sourceDirectory>src/main/java</sourceDirectory>
-		<testSourceDirectory>src/test/java</testSourceDirectory>
-		<resources>
-			<resource>
-				<directory>src/main/resources</directory>
-			</resource>
-		</resources>
 		<plugins>
 	        <plugin>
 	            <groupId>org.apache.maven.plugins</groupId>
@@ -66,7 +59,7 @@
 	                </descriptorRefs>
 	                <archive>
 	                    <manifest>
-	                        <mainClass>itens.MyGiftCore</mainClass>
+	                        <mainClass>src.MyGiftCore</mainClass>
 	                    </manifest>
 	                </archive>
 	            </configuration>
