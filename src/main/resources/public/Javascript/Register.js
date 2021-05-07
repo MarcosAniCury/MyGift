@@ -6,7 +6,7 @@ $('form').submit(e => {
     $.post('http://localhost:5573/cadastro', data, res => {
         let response = JSON.parse(res)
         if (response.CadastroEfetuado) {
-            window.location.href = './Index.html?auth=true'
+            window.location.href = './index.html?auth=true'
         } else {
             $('#error_message').html(`<span class="text-danger mt-2">Informações inválidas</span>`)
         }

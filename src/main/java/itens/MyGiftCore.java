@@ -138,7 +138,7 @@ public class MyGiftCore {
 		String resp;
 		try
 		{
-			String htmlFile = "Index.html";
+			String htmlFile = "index.html";
 			URL url = MyGiftCore.class.getResource(htmlFile);
 			Path path = Paths.get(url.toURI());
 			resp = new String(Files.readAllBytes(path), Charset.defaultCharset());

@@ -25,7 +25,7 @@ $('form').submit(e => {
     $.post('http://localhost:5573/esquecisenha', data, res => {
         let resp = JSON.parse(res)
         if(resp.status)
-            window.location.href = './Index.html'
+            window.location.href = './index.html'
         else
             $('.result').html(`<span class="text-danger mt-2">Informações inválidas</span>`)
     })
