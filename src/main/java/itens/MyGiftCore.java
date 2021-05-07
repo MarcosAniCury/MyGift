@@ -1,7 +1,17 @@
 package itens;
+
+import java.net.*;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Random;
-import itens.MyIO;
+
+import spark.*;
 import static spark.Spark.*;
+
+import itens.MyIO;
+
 
 /*
  * 
@@ -19,10 +29,12 @@ public class MyGiftCore {
 	public static void main(String [] args)
 	{	
 		dao.conectar();
-		port(5573);
+		port(getHerokuAssignedPort());
 		staticFiles.location("/public");
 		
 		//--Usuario--
+		
+		get("/", (request, response) -> renderIndex(request, response));
 		
 		post("/formulario", (request, response) -> Servicos.formulario(request, response));
 		
@@ -111,4 +123,31 @@ public class MyGiftCore {
         }
         return produtos;
     }
+	
+	private static int getHerokuAssignedPort() 
+	{
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        if (processBuilder.environment().get("PORT") != null) 
+            return Integer.parseInt(processBuilder.environment().get("PORT"));
+        return 4567; //return default port if heroku-port isn't set (i.e. on localhost)
+    }
+	
+	private static String renderIndex(Request req, Response res)
+	{
+		res.type("text/html");
+		String resp;
+		try
+		{
+			String htmlFile = "Index.html";
+			URL url = MyGiftCore.class.getResource(htmlFile);
+			Path path = Paths.get(url.toURI());
+			resp = new String(Files.readAllBytes(path), Charset.defaultCharset());
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+			resp = "<html><head><title>Error</title></head><body>Erro...</body></html>";
+		}
+		return resp;
+	}
 }
