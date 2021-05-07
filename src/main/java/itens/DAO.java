@@ -411,7 +411,7 @@ public class DAO
 		return retorno;
 	}
 	
-	//-----Algoritmo de Recomendação----
+	//-----Algoritmo de Recomendacao----
 	
 	public int idMelhorProduto(String[] hobbies,int idade,char valor)
 	{
