@@ -14,3 +14,7 @@
 ### Target:
     Resumo: Local aonde se encontra a parte do servidor do sistema e classes.
 - Classes: Local aonde se encontra as classes geradas pelos arquivos .java do back-end
+
+## Acesso ao Site
+
+- https://mygiftbyminerva.herokuapp.com/
