@@ -1,0 +1,29 @@
+USUARIO,Tipo,NOT NULL,Primary Key,Foreign Key,Descrição
+Id,SERIAL,X,X,-,Dado que armazena a id do usuário
+Nome,VARCHAR(50),-,-,-,Dado que armazena o nome do usuário
+pergunta,VARCHAR(30),X,-,-,Dado que armazena a resposta da pergunta de segurança
+Idade,INTEGER,-,-,-,Dado que armazena a idade do usuário
+Gênero,CHAR(1),-,-,-,Dado que armazena o gênero do usuário
+Senha,VARCHAR(30),X,-,-,Dado que armazena a senha do usuário
+DataNascimento,CHAR(10),-,-,-,Dado que armazena a data de nascimento do usuário
+isadm,BOOLEAN,X,-,-,Dado que armazena se o usuário é administrador ou não
+Email,VARCHAR(50),X,-,-,Dado que armazena o email do usuário
+,,,,,
+PRODUTO,Tipo,NOT NULL,Primary Key,Foreign Key,Descrição
+Id,SERIAL,X,X,-,Dado que armazena a id do produto
+Nome,VARCHAR(50),-,-,-,Dado que armazena o nome do produto
+Preco,FLOAT,-,-,-,Dado que armazena preço do produto
+Etaria,INTEGER,-,-,-,Dado que armazena faixa etária do produto
+Imagem,VARCHAR(200),-,-,-,Dado que armazena o nome do arquivo da foto
+,,,,,
+HOBBIES,Tipo,NOT NULL,Primary Key,Foreign Key,Descrição
+Id,INTEGER,X,X,-,Dado que armazena a id do hobbie
+Nome,VARCHAR(50),-,-,-,Dado que armazena o nome do hobbie
+,,,,,
+HOBBIES/USER,Tipo,NOT NULL,Primary Key,Foreign Key,Descrição
+Usuário,INTEGER,X,X,X,Dado que armazena a id do usuário
+Hobbie,INTEGER,X,X,X,Dado que armazena a id do hobbie
+,,,,,
+HOBBIES/PRODUTO,Tipo,NOT NULL,Primary Key,Foreign Key,Descrição
+Produto,INTEGER,X,X,X,Dado que armazena a id do produto
+Hobbie,INTEGER,X,X,X,Dado que armazena a id do hobbie
